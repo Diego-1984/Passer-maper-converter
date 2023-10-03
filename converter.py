@@ -9,7 +9,7 @@ input_xml = etree.parse('input.xml')
 # Validate the input XML against the XSD schema
 if xsd_schema.validate(input_xml):
     # Create a new XML document based on the schema
-    output_root = etree.Element('RootElement')  # Replace with your root element name
+    output_root = etree.Element('output.xml')
 
     # Add elements and data to the output XML as needed
     output_element = etree.SubElement(output_root, 'OutputElement')
